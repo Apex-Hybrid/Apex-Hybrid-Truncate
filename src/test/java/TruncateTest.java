@@ -73,7 +73,7 @@ public class TruncateTest {
 
             Connection connection = ConnectionUtil.getConnection();
             String sql1 = "DROP TABLE song;";
-
+            /* */
             PreparedStatement ps = connection.prepareStatement(sql1);
 
             ps.executeUpdate();
