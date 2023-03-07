@@ -17,7 +17,8 @@ import java.sql.Statement;
  *      The documentation in W3 schools has a TRUNCATE demo under the DROP TABLE demo.
  */
 public class Truncate {
-
+    
+    
     /**
      *      Song Table Diagram:
      *      |      title        |        artist         |
@@ -30,10 +31,10 @@ public class Truncate {
         /**
          * problem2: remove all the records from the table "song"
          */
-        String sql = FileUtil.parseSQLFile("problem2.sql");
-
-
-
+        String sql = FileUtil.parseSQLFile("TRUNCATE TABLE song");
+        
+        
+        
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
